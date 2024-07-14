@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.0.0/dist/full.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.20.0/dist/full.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>AlisaT.</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif; 
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    
+    </head>
+
+    <section class="h-screen flex items-center bg-cover justify-center bg-center opacity-100"
+        style="background-image: url('https://cdn.wallpaperhub.app/cloudcache/7/6/1/b/d/5/761bd5863602773ce4995a6507d7056a6c96bb35.jpg');">
+
+        <div class="navbar fixed top-0 w-full bg-black bg-opacity-30 backdrop-blur-md flex justify-between items-center z-50">
+            <div class="navbar-start flex items-center">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle flex md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow-lg">
+                        <li><a href="#" class="text-white">Homepage</a></li>
+                        <li><a href="#portfolio-section" class="text-white">Portfolio</a></li>
+                        <li><a href="#about-section" class="text-white">About</a></li>
+                        <li><a href="#contact-section" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="ml-8 mr-12 text-xl text text-white " style="transform: scaleX(-1);">🐇</a>
+                    <a href="#" class="ml-8 text-white">HOME</a>
+                    <a href="#about-section" class="text-white">ABOUT</a>
+                    <a href="#portfolio-section" class="text-white">PORTFOLIO</a>
+                    <a href="#contact-section" class="text-white">CONTACT</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-end absolute top-20 right-1 ">
+            <a href="https://www.linkedin.com/in/alisa-sreesatainwong-11345414a/" class="mt-8">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="34" viewBox="0 0 24 24"
+                    style="fill: rgba(252, 250, 250, 1);">
+                    <path
+                        d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://github.com/maliojiw" class="mt-8">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="34" viewBox="0 0 24 24"
+                    style="fill: rgb(255, 255, 255);">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
+                    </path>
+                </svg>
+            </a>
+            <div class="mr-3">
+            <div class="mt-8 w-0.5 h-10 bg-white opacity-90"></div>
+            <div class=" w-0.5 h-10 bg-white opacity-70"></div>
+            <div class=" w-0.5 h-10 bg-white opacity-60"></div>
+            <div class=" w-0.5 h-10 bg-white opacity-50"></div>
+            <div class="mt-8 mb-8 font-semi-bold text-xs text-white">
+                <p>A</p>
+                <p class="ml-0.5">L</p>
+                <p class="ml-0.5">I</p>
+                <p>S</p>
+                <p>A</p>
+                <p class="mt-4">T.</p></div>
+            <div class=" w-0.5 h-14 bg-white opacity-40"></div>
+            <div class=" w-0.5 h-14 bg-white opacity-30"></div>
+            <div class=" w-0.5 h-14 bg-white opacity-20"></div>
+            <div class=" w-0.5 h-14 bg-white opacity-10"></div>
+        </div>
+        </div>
+        <section>
+            <div>
+                <img src="https://img2.pic.in.th/pic/picmix.com_1813796.png" class="opacity-70 mt-40 " alt="Moon Image" width="150" height="150"> 
+            <h1 class=" mr-8 text-white font-bold text-3xl shadow-3xl">
+                Creative solutions
+            </h1>   
+            <h1 class="text-white ml-8 shadow-xl">
+            turn ideas into digital reality  
+            </h1>
+            </div>
+            <div class="mt-10 flex flex-col items-start opacity-10" style="transform: rotate(180deg) scaleX(-1);">
+            <h1 class="flex flex-col items-start">
+                <img src="https://img2.pic.in.th/pic/picmix.com_1813796.png" class="opacity-90 " alt="Moon Image" width="150" height="150">
+                <h1 class="text-white font-bold text-3xl">
+                    Creative solutions
+                </h1>
+                <h1 class=" text-white ml-8">
+                    turn ideas into digital reality
+                </h1>
+                
+            </div>  
+            <button class="btn btn-wide mt-10">view cv</button>
+        </section>    
+
+    </section>
+    
+    <section id="about-section" class="bg-black opacity-100 pb-40">
+        <div class="text-white font-montserrat pt-60 ">
+        <div class="flex items-center mb-4 ml-8">    
+            <h2 >01.</h2>
+            <div class="ml-4 h-0.5 w-10 bg-gray-300 mr-4"></div> 
+            <h2>About me</h2>
+        </div>
+        <div class="ml-24 mr-24">
+        <h1 class=" mt-20 text-3xl md:text-5xlfont-bold">
+            ALISA T.
+        </h1>
+        <h2 class="mt-4 text-2xl md:text-4xl">
+            Stellar is a branding agency based in Somewhere. We design thoughtful digital experiences and beautiful brand aesthetics.
+        </h2>    
+        <p class="mt-8 text-lg md:text-xl">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>    
+        </div> 
+        <div class="my-32 ml-24 mr-32 grid grid-cols-2 gap-20">
+            <div class="flex flex-col">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                        <path d="M16 2.012 3 20h18zm-6.251 14.906L19.399 12l-7.65-4.918z"></path>
+                    </svg>
+                    <p class="ml-4 mb-4 text-blue-300 opacity-80 font-bold">Designing</p>
+                </div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepte."</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                        <path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path>
+                    </svg>
+                    <p class="ml-4 mb-4 text-blue-300 opacity-80 font-bold">Developing</p>
+                </div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepte."</p>
+            </div>
+        
+        
+        
+            <div class="flex flex-col mt-10">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                        <path d="M6.787 7h10.426c-.108-.158-.201-.331-.318-.481l2.813-2.812-1.414-1.414-2.846 2.846a6.575 6.575 0 0 0-.723-.454 5.778 5.778 0 0 0-5.45 0c-.25.132-.488.287-.722.453L5.707 2.293 4.293 3.707l2.813 2.812c-.118.151-.21.323-.319.481zM5.756 9H2v2h2.307c-.065.495-.107.997-.107 1.5 0 .507.042 1.013.107 1.511H2v2h2.753c.013.039.021.08.034.118.188.555.421 1.093.695 1.6.044.081.095.155.141.234l-2.33 2.33 1.414 1.414 2.11-2.111a7.477 7.477 0 0 0 2.068 1.619c.479.253.982.449 1.496.58.204.052.411.085.618.118V16h2v5.914a6.23 6.23 0 0 0 .618-.118 6.812 6.812 0 0 0 1.496-.58c.465-.246.914-.55 1.333-.904.258-.218.5-.462.734-.716l2.111 2.111 1.414-1.414-2.33-2.33c.047-.08.098-.155.142-.236.273-.505.507-1.043.694-1.599.013-.039.021-.079.034-.118H22v-2h-2.308c.065-.499.107-1.004.107-1.511 0-.503-.042-1.005-.106-1.5H22V9H5.756z"></path>
+                    </svg>
+                    <p class="ml-4 mb-4 text-blue-300 opacity-80 font-bold">Team working</p>
+                </div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepte."</p>
+            </div>
+        
+            <div class="flex flex-col mt-10">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                        <path d="M20 13.01h-7V10h1c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v4c0 1.103.897 2 2 2h1v3.01H4V18H3v4h4v-4H6v-2.99h5V18h-1v4h4v-4h-1v-2.99h5V18h-1v4h4v-4h-1v-4.99zM10 8V4h4l.002 4H10z"></path>
+                    </svg>
+                    <p class="ml-4 mb-4 text-blue-300 opacity-80 font-bold">Test and Debug</p>
+                </div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepte."</p>
+            </div>
+        </div>  
+        <div class="flex w-full flex-col">
+            <div class="divider">experiences</div>
+        </div>
+        <ul class="space-y-8 mx-20 mt-20">
+            <li class="relative flex items-center space-x-4 ">
+                <div class="absolute left-0 w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-blue-500 font-bold">o</div>
+                <div class="p-4 ml-12 bg-gray-800 shadow rounded-md w-full">
+                    <h3 class="text-lg text-white font-bold">Generation thailand boostcamp (JSD 07)</h3>
+                    <p class="text-white">January 24, 2024</p>
+                    <div class="skill-slot flex flex-wrap gap-2 p-4">
+                        <span class="tag inline-block bg-blue-900 text-white px-4 py-2 rounded-lg text-sm font-semibold">HTML</span>
+                        <span class="tag inline-block bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-semibold">CSS</span>
+                        <span class="tag inline-block bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold">Tailwindcss</span>
+                        <span class="tag inline-block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">JavaScript</span>
+                        <span class="tag inline-block bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold">React.js</span>
+                        <span class="tag inline-block bg-blue-400 text-white px-4 py-2 rounded-lg text-sm font-semibold">Node.js</span>
+                        <span class="tag inline-block bg-blue-300 text-white px-4 py-2 rounded-lg text-sm font-semibold">MongoDB</span>
+                        <span class="tag inline-block bg-blue-200 text-black px-4 py-2 rounded-lg text-sm font-semibold">SQL</span>
+                        <span class="tag inline-block bg-blue-100 text-blue-900 px-4 py-2 rounded-lg text-sm font-semibold">AI</span>
+                        <span class="tag inline-block bg-blue-900 text-white px-4 py-2 rounded-lg text-sm font-semibold">Prompt engineering</span>
+                        <span class="tag inline-block bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-semibold">Growth mindset</span>
+                        <span class="tag inline-block bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold">Teamwork</span>
+                        <span class="tag inline-block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">Proactiveness</span>
+                        <span class="tag inline-block bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold">Critical thinking</span>
+                        <span class="tag inline-block bg-blue-400 text-white px-4 py-2 rounded-lg text-sm font-semibold">Time management</span>
+                        <span class="tag inline-block bg-blue-300 text-white px-4 py-2 rounded-lg text-sm font-semibold">Problem solving</span>
+                      </div>
+                </div>
+            </li>
+            <li class="relative flex items-center space-x-4">
+                <div class="absolute left-0 w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-blue-500 font-bold">o</div>
+                <div class="p-4 ml-12 bg-gray-800 shadow rounded-md w-full">
+                    <h3 class="text-lg font-bold text-white">KMITL OIA research scholarship</h3>
+                    <p class="text-white">August 15, 2019</p>
+                    <div class="skill-slot flex flex-wrap gap-2 p-4">
+                    <span class="tag inline-block bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-semibold">Growth mindset</span>
+    <span class="tag inline-block bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold">Teamwork</span>
+    <span class="tag inline-block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">Proactiveness</span>
+    <span class="tag inline-block bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold">Critical thinking</span>
+    <span class="tag inline-block bg-blue-400 text-white px-4 py-2 rounded-lg text-sm font-semibold">Time management</span>
+    <span class="tag inline-block bg-blue-300 text-white px-4 py-2 rounded-lg text-sm font-semibold">Problem solving</span>
+    <span class="tag inline-block bg-blue-100 text-black px-4 py-2 rounded-lg text-sm font-semibold">Research</span>
+    <span class="tag inline-block bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-semibold">IoT</span>
+                </div>
+            </li>
+            <li class="relative flex items-center space-x-4">
+                <div class="absolute left-0 w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-blue-500 font-bold">o</div>
+                <div class="p-4 ml-12 bg-gray-800 shadow rounded-md w-full">
+                    <h3 class="text-lg text-white font-bold">ISTS 2018 hackathon</h3>
+                    <p class="text-white">October 23, 2018</p>
+                    <div class="hackathon-skill-slot flex flex-wrap gap-2 p-4">
+                        <span class="tag inline-block bg-blue-900 text-white px-4 py-2 rounded-lg text-sm font-semibold">Web Development</span>
+                        <span class="tag inline-block bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-semibold">Mobile App Development</span>
+                        <span class="tag inline-block bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold">UI/UX Design</span>
+                        <span class="tag inline-block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">Backend Development</span>
+                        <span class="tag inline-block bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold">Database Management</span>
+                        <span class="tag inline-block bg-blue-300 text-white px-4 py-2 rounded-lg text-sm font-semibold">Startup Strategy</span>
+                      </div>
+                </div>
+            </li>
+            <li class="relative flex items-center space-x-4">
+                <div class="absolute left-0 w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-blue-500 font-bold">o</div>
+                <div class="p-4 ml-12 bg-gray-800 shadow rounded-md w-full">
+                    <h3 class="text-lg text-white font-bold">coding tutor</h3>
+                    <p class="text-white">2019-2024</p>
+                    <div class="coding-tutor-skills flex flex-wrap gap-2 p-4">
+                        <span class="tag inline-block bg-blue-900 text-white px-4 py-2 rounded-lg text-sm font-semibold">Python</span>
+                        <span class="tag inline-block bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-semibold">Java</span>
+                        <span class="tag inline-block bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold">Discrete Math</span>
+                        <span class="tag inline-block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">Data Structures</span>
+                        <span class="tag inline-block bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold">Algorithm</span>
+                    </div>
+                </div>
+            </li>
+            <li class="relative flex items-center space-x-4">
+                <div class="absolute left-0 w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-blue-500 font-bold">o</div>
+                <div class="p-4 ml-12 bg-gray-800 shadow rounded-md w-full">
+                    <h3 class="text-lg text-white font-bold">42 Bangkok</h3>
+                    <p class="text-white">April 24, 2024</p>
+                    <div class="self-learning-skills flex flex-wrap gap-2 p-4">
+                        <span class="tag inline-block bg-blue-900 text-white px-4 py-2 rounded-lg text-sm font-semibold">Time Management</span>
+                        <span class="tag inline-block bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-semibold">Goal Setting</span>
+                        <span class="tag inline-block bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold">Research Skills</span>
+                        <span class="tag inline-block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">Critical Thinking</span>
+                        <span class="tag inline-block bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold">Problem Solving</span>
+                        <span class="tag inline-block bg-blue-400 text-white px-4 py-2 rounded-lg text-sm font-semibold">Information Synthesis</span>
+                        <span class="tag inline-block bg-blue-300 text-white px-4 py-2 rounded-lg text-sm font-semibold">Adaptability</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </section>
+    <section class="h-screen flex items-center bg-cover justify-center bg-center opacity-100 xl:mb-10 lg:mb-20 md:mb-64 mb-96"
+    style="background-image: url('https://img2.pic.in.th/pic/marc-a-sporys-wHaQ4XJ9SgY-unsplash.jpg');">
+    <div class="text-black font-montserrat pt-60 ml-10 mr-10">
+    <div class="pt-40">
+        <div class="flex items-center mb-4 md:pt-40 pt-96 ml-10 ">    
+        <h2>02.</h2>
+        <div class="ml-4 h-0.5 w-10 bg-gray-300 mr-4"></div> 
+        <h2>Tech stacks</h2>
+        </div>
+        <p class="flex pt-20 font-bold text-blue-800 opacity-70 text-3xl">MY STACKS & SKILLS</p>
+        <!-- Grid container -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-16 mt-10 md:mt-32 ">
+        <!-- Skill slots -->
+        <div class="skill-slot bg-gradient-to-r from-blue-100 via-blue-200 to-blue-100 p-4 rounded-3xl flex items-center flex-col">JAVA
+            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M9.37 17.51c-3.09.86 1.87 2.64 5.8 1a7.18 7.18 0 0 1-1.1-.54 11.59 11.59 0 0 1-4.16.18c-1.31-.15-.54-.64-.54-.64zm5.33-1.68a16.27 16.27 0 0 1-5.36.26c-1.31-.14-.45-.77-.45-.77-3.4 1.12 1.89 2.4 6.64 1a2.25 2.25 0 0 1-.83-.49zm1.82-9.73s-6.87 1.71-3.59 5.49a1.47 1.47 0 0 1-.25 2.12s2.46-1.27 1.33-2.86-1.86-2.22 2.51-4.75z"></path><path d="M18.13 19.14s.56.46-.63.82c-2.27.69-9.43.9-11.42 0-.72-.31.62-.74 1-.83a2.54 2.54 0 0 1 .69-.08c-.8-.56-5.15 1.1-2.21 1.58 8.05 1.37 14.64-.56 12.57-1.49zm-2.76-4.88a7 7 0 0 1 .92-.49s-1.51.27-3 .4a28.11 28.11 0 0 1-4.82.05C6.09 13.91 9.74 13 9.74 13a6.81 6.81 0 0 0-3.16.75c-2.06 1.03 5.09 1.48 8.79.51zm.91 2.44a.39.39 0 0 1-.08.09c5-1.32 3.18-4.65.78-3.81a.71.71 0 0 0-.33.25s.14-.05.43-.12c1.22-.25 2.92 1.63-.8 3.59zM12 13c-.74-1.67-3.26-3.14 0-5.71C16.09 4.08 14 2 14 2c.84 3.31-3 4.31-4.34 6.37-.93 1.41.47 2.92 2.34 4.63z"></path><path d="M16.41 21.32a29.75 29.75 0 0 1-9.14.14s.46.38 2.84.53c3.61.23 9.15-.12 9.29-1.83 0 0-.26.64-2.99 1.16z"></path></svg>
+        </div>
+        <div class="skill-slot bg-gradient-to-r from-blue-100 via-blue-200 to-blue-100 p-4 rounded-3xl flex items-center flex-col">Python
+            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M9.585 11.692h4.328s2.432.039 2.432-2.35V5.391S16.714 3 11.936 3C7.362 3 7.647 4.983 7.647 4.983l.006 2.055h4.363v.617H5.92s-2.927-.332-2.927 4.282 2.555 4.45 2.555 4.45h1.524v-2.141s-.083-2.554 2.513-2.554zm-.056-5.74a.784.784 0 1 1 0-1.57.784.784 0 1 1 0 1.57z"></path><path d="M18.452 7.532h-1.524v2.141s.083 2.554-2.513 2.554h-4.328s-2.432-.04-2.432 2.35v3.951s-.369 2.391 4.409 2.391c4.573 0 4.288-1.983 4.288-1.983l-.006-2.054h-4.363v-.617h6.097s2.927.332 2.927-4.282-2.555-4.451-2.555-4.451zm-3.981 10.436a.784.784 0 1 1 0 1.57.784.784 0 1 1 0-1.57z"></path></svg>
+        </div>
+        <div class="skill-slot bg-gradient-to-r from-blue-100 via-blue-200 to-blue-100 p-4 rounded-3xl flex items-center flex-col">Javascript
+            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z"></path></svg>
+        </div>
+        <div class="skill-slot bg-gradient-to-r from-blue-100 via-blue-200 to-blue-100 p-4 rounded-3xl flex items-center flex-col">HTML
+            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"></path></svg>
+        </div>
+        <div class="skill-slot bg-gradient-to-r from-blue-100 via-blue-200 to-blue-100 p-4 rounded-3xl flex items-center flex-col">CSS-tailwind
+            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z"></path></svg>
+        </div>
+        <div class="skill-slot bg-gradient-to-r from-blue-100 via-blue-200 to-blue-100 p-4 rounded-3xl flex items-center flex-col">SQL
+            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM5 20V7h14V6l.002 14H5z"></path><path d="M7 9h10v2H7zm0 4h5v2H7z"></path></svg>
+        </div>
+        <div class="skill-slot bg-gradient-to-r from-blue-100 via-blue-200 to-blue-100 p-4 rounded-3xl flex items-center flex-col">NO SQL
+            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 10H7v-2h5v2zm5-4H7V8h10v2z"></path></svg>
+        </div>
+        <div class="skill-slot bg-gradient-to-r from-blue-100 via-blue-200 to-blue-100 p-4 rounded-3xl flex items-center flex-col">GO-LANG
+            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M3.79 10.17a.18.18 0 0 0-.11 0l-.2.27H7a.15.15 0 0 0 .1-.06l.17-.26v-.05zm-1.47.89a.14.14 0 0 0-.11 0l-.2.26v.05h4.6a.09.09 0 0 0 .09-.06l.08-.23v-.06zM4.6 12a.13.13 0 0 0-.1.06l-.13.24v.06h2.15a.08.08 0 0 0 .07-.07v-.23s0-.07-.06-.07zm15.99-3.07a3.62 3.62 0 0 0-2.78-.5 4.09 4.09 0 0 0-2.72 1.63 4 4 0 0 0-.67 1.26h-3.14a.25.25 0 0 0-.24.16c-.14.25-.37.76-.5 1.06s0 .29.18.29h1.88a2.8 2.8 0 0 1-.26.36 1.81 1.81 0 0 1-1.65.65 1.53 1.53 0 0 1-1.32-1.53 2.07 2.07 0 0 1 1-1.85 1.71 1.71 0 0 1 1.77-.15 1.36 1.36 0 0 1 .45.37c.13.15.14.14.29.1l1.63-.43c.12 0 .16-.08.1-.16a3 3 0 0 0-1.13-1.38 3.35 3.35 0 0 0-2.58-.47A4.31 4.31 0 0 0 8.16 10a3.81 3.81 0 0 0-.82 2.85A3 3 0 0 0 8.57 15a3.46 3.46 0 0 0 2.62.65A4.06 4.06 0 0 0 14 14a4.33 4.33 0 0 0 .41-.69 3 3 0 0 0 1 1.55 3.68 3.68 0 0 0 2.38.86c.25 0 .51 0 .78-.09a4.51 4.51 0 0 0 2.33-1.25A3.72 3.72 0 0 0 22 11.1a3 3 0 0 0-1.41-2.17zm-1.78 4.73a1.81 1.81 0 0 1-1.59.06 1.61 1.61 0 0 1-.9-1.84A2.12 2.12 0 0 1 18 10.19a1.59 1.59 0 0 1 2 1.29 2.91 2.91 0 0 1 0 .32 2.11 2.11 0 0 1-1.19 1.86z"></path></svg>
+        </div>
+        </div>  
+        <div class="flex flex-col items-center mb-20 md:mb-10">
+            <p class="text-xl text-black pt-14 md:pt-24 font-bold text-black opacity-70">Version control : GitHub</p>
+            <p class="text-xl text-black pt-6 md:pt-10 font-bold text-black opacity-70">Language: TH/EN/NE </p>
+        </div> 
+    </div>
+    </div>         
+        
+            
+    </section>
+    <section class=" flex items-center bg-cover justify-center bg-center"
+    style="background-image: url('https://img2.pic.in.th/pic/marc-a-sporys-wHaQ4XJ9SgY-unsplash.jpg'); transform: rotate(180deg);">
+    <div class="bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 w-full mx-20 h-80 mt-96 rounded-3xl relative flex items-center justify-center opacity-80">
+        <p class="text-2xl text-black absolute bottom-0 font-bold mb-8 transform rotate-180 ">Tools </p>
+        <p class="text-xl text-black absolute bottom-0 mb-28 transform rotate-180 ">Flask , Django ,Spring boot </p>
+        <p class="text-xl text-black absolute bottom-0 mb-44 transform rotate-180 ">React.js , Express.js </p>
+        <p class="text-xl text-black absolute bottom-0 mb-60 transform rotate-180 ">MongoDB , SQlite , sqlachemy </p>
+    </div>  
+</section>
+
+    
+<section class="bg-black pt-20 pb-20 flex justify-center items-center flex-col">
+    <h1 class="text-white text-3xl font-bold mb-10 text-center">STACKS</h1>
+    <div class="flex flex-col items-center">
+        <div class="mb-10">
+            <img src="https://b2bcampus.com/wp-content/uploads/2023/06/Group-79182-2-2.png" class="opacity-90" alt="Moon Image" width="300">
+            <p class="text-white text-center mt-2">MERN STACK</p>
+        </div>
+        <div class="mb-10">
+            <img src="https://media.licdn.com/dms/image/C5612AQEzIUKfbUUNWw/article-cover_image-shrink_600_2000/0/1640701919659?e=2147483647&v=beta&t=_GgQWOSDG_nklkJef1XqFVHk68CKCsKIBohmCzkJk-Q" class="opacity-90" alt="Moon Image" width="300">
+            <p class="text-white text-center mt-2">JAVA, Spring boot</p>
+        </div>
+        <div>
+            <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABdApZIuLy-WxB4T1b6tV0lo7WseeydBN5d9Ajj2PUnKYVLSQXbQUgq0DKtPNbxEB_ft-j6TF7eanP6rMZCK7v27i07FgKZ8wCYHcAgIDno7S.png?r=893" class="opacity-90" alt="Moon Image" width="300">
+            <p class="text-white text-center mt-2">Python, Django</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio-section" class="h-screen flex items-center bg-cover justify-center bg-center opacity-100"
+    style="background-image: url('https://rare-gallery.com/uploads/posts/4575078-flowers-white-flowers-depth-of-field-daisies-matricaria.jpg');">
+    <div class="relative flex items-center text-white justify-center w-full h-full">
+        <div class="absolute top-8 left-8 z-10">
+            <div class="flex items-center">    
+                <h2 class="text-white mr-2 text-sm">03.</h2>
+                <div class="h-0.5 w-10 bg-gray-300 mr-2"></div> 
+                <h2 class="text-white text-sm ont-semibold">projects</h2>
+            </div>
+        </div>
+        <p class="absolute top-48 lg:left-40 left-20 text-3xl lg:text-5xl shadow-3xl font-semibold">RECENT WORKS</p>
+        <p class="absolute top-60 lg:left-60 left-40 mt-4 text-xl lg:text-2xl shadow-3xl font-semibold">. . . SINCE 2020</p>
+    </div>
+</section>
+
+</section>  
+<section class="pt-20 pb-40 flex items-center justify-center bg-black">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 gap-8">
+        <!-- Project 1 - Puey Puey E-Commerce -->
+        <div class="bg-gray-900 text-white rounded-lg shadow-lg p-6 flex flex-col mb-8">
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Puey Puey E-Commerce (Web application)</h3>
+                <h2 class="text-sm mb-4">Jul 2024</h2>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Market Research and Application Development: Researched the pet humanization trend in Thailand and developed a web application based on user personas derived from data provided by Mahidol University's Marketing Faculty.</li>
+                    <li>UX/UI Design and Implementation: Designed a user-friendly UX/UI by leveraging detailed persona research, ensuring an intuitive user experience and consistent design elements to simplify processes and highlight key information.</li>
+                    <li>Full-Stack Development: Utilized the MERN stack (MongoDB, Express.js, React.js, Node.js) to build web applications, focusing on front-end UX/UI optimization and seamless back-end integration for efficient data management, payment processing, and dashboard functionalities.</li>
+                    <li>Project Management and Team Collaboration: Managed team projects using Trello and Stack, fostering a cooperative work environment with regular meetings, clear communication, and well-defined tasks to ensure smooth project progress.</li>
+                </ul>
+                <div class="mt-auto">
+                    <span class="bg-gray-600 text-xs px-2 py-1 rounded-md mr-2">React</span>
+                    <span class="bg-gray-600 text-xs px-2 py-1 rounded-md">Express</span>
+                </div>
+            </div>
+            <a href="https://eotd-front-end-ps1z.vercel.app/" class="inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 mt-4">View Project</a>
+        </div>
+        
+
+
+        <div class="bg-gray-900 text-white rounded-lg shadow-lg p-6 flex flex-col mb-8">
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Shopping Cart (Mini Project)</h3>
+                <h2 class="text-sm mb-4">Apr 2024</h2>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>The project features functionalities like adding items to the cart, updating quantities, and checking out.</li>
+                </ul>
+                <div class="mt-auto">
+                    <span class="bg-gray-600 text-xs px-2 py-1 rounded-md">HTML</span>
+                    <span class="bg-gray-600 text-xs px-2 py-1 rounded-md ml-2">CSS</span>
+                    <span class="bg-gray-600 text-xs px-2 py-1 rounded-md ml-2">JavaScript</span>
+                </div>
+            </div>
+            <a href="https://01-alisa-js.vercel.app/" class="inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 mt-4">View Project</a>
+        </div>
+        
+
+        <div class="bg-gray-900 text-white rounded-lg shadow-lg p-6 flex flex-col mb-8">
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Admin dashboard (Mini Project)</h3>
+                <h2 class="text-sm mb-4">Apr 2024</h2>
+                <ul class="list-disc ml-6 mb-6">
+                    <li>Connect API by RESTful method, utilizing AXIOS library to CREATE (POST), READ (GET), DELETE (DELETE) data from API Doc.</li>
+                    <li>Add validation for create form in admin panel.</li>
+                    <li>Design and implement UPDATE (PUT) form in admin panel, connect API is useful.</li>
+                </ul>
+                <div class="mt-auto">
+                    <span class="bg-gray-600 text-xs px-2 py-1 rounded-md">React</span>
+                </div>
+            </div>
+            <a href="https://alisa-01-react.vercel.app/" class="inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 mt-4">View Project</a>
+        </div>
+
+    </section>  
+
+
+
+<section class="h-screen flex bg-gradient-to-b from-black to-white">
+    
+</section>
+<section id="contact-section" class="h-screen flex bg-cover justify-center bg-center opacity-100"
+    style="background-image: url('https://images.unsplash.com/photo-1571839399973-16556023ab44?q=80&w=3144&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="mt-20 flex-col h-60 items-start px-6 py-4 bg-opacity-80 text-black rounded-lg shadow-lg">
+        <h3 class="text-lg font-semibold mb-2">Contact Me</h3>
+        <p class="text-base mb-2">Email: alisasreest@gmail.com</p>
+        <p class="text-base mb-2">Phone: (+66) 81 070 6087</p>
+        
+    </div>  
+</section>
+
+
+<footer class="footer bg-neutral text-neutral-content p-10">
+    <aside>
+    
+    <p>
+        all rights reserved 
+        <br />
+
+        Powered by html and css
+    </p>
+    </aside>
+    <nav>
+    
+</footer>  
+
+
+
+</body>
+</html>
